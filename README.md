@@ -19,7 +19,7 @@ Customer churn has a direct impact on revenue and long-term growth. Understandin
 
 **Note:** The raw dataset is not included in this repository due to size and licensing constraints.
 
-**Source:** Public customer churn dataset (e.g., Kaggle – Telco Customer Churn)
+
 
 ---
 
