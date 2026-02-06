@@ -1,59 +1,90 @@
-# Customer Churn Analytics Dashboard
+# Customer Churn Analytics & Prediction
 
-## Overview
-This project focuses on analyzing customer churn behavior using a large-scale customer dataset. The objective is to identify key churn drivers and high-risk customer segments, and to translate analytical insights into a clear, interactive business dashboard.
+## Project Overview
+Customer churn is a major challenge for subscription-based businesses.  
+This project analyzes customer behavior to identify churn drivers and builds a predictive model to help businesses proactively retain high-risk customers.
 
-The project covers the full analytics workflow — from data exploration and cleaning in Python to KPI-driven visualization in Power BI.
+The focus is on **analytics-driven decision making**, combining exploratory analysis, statistical insights, and a predictive model, with results communicated through a Power BI dashboard.
 
 ---
 
 ## Business Problem
-Customer churn has a direct impact on revenue and long-term growth. Understanding **who is most likely to churn and why** helps organizations design targeted retention strategies and improve customer lifetime value.
+- Why do customers churn?
+- Which customer segments are most at risk?
+- How can churn be predicted early to support retention strategies?
 
 ---
 
 ## Dataset
-- Size: 100,000+ customer records  
-- Features include tenure, contract type, payment method, monthly charges, and churn status  
-- Dataset used strictly for educational and analytical purposes  
+- Size: **100,000+ customer records**
+- Type: Subscription-based customer data
+- Key features:
+  - Tenure
+  - Monthly & Total Charges
+  - Contract type
+  - Payment method
+  - Demographics (Age, Gender)
+  - Churn label
 
-**Note:** The raw dataset is not included in this repository due to size and licensing constraints.
+*(Raw dataset excluded from repository due to size and licensing constraints.)*
 
+---
 
+## Phase 1: Exploratory Data Analysis (EDA)
+- Analyzed churn distribution across customer segments
+- Identified strong relationships between churn and:
+  - Contract type
+  - Customer tenure
+  - Monthly charges
+- Visualized trends using Python (Seaborn, Matplotlib)
+
+---
+
+## Phase 2: Churn Prediction Model
+- Built a **logistic regression model** to predict customer churn
+- Performed:
+  - Feature encoding
+  - Train–test split with stratification
+  - Model evaluation using precision, recall, and ROC-AUC
+- Interpreted model coefficients to understand churn drivers
+
+### Key Findings
+- Customers on **month-to-month contracts** have the highest churn risk
+- **Short tenure** strongly increases churn probability
+- Higher monthly charges contribute to churn likelihood
+
+---
+
+## Business Recommendations
+- Target short-tenure customers with retention offers
+- Incentivize upgrades to long-term contracts
+- Proactively engage customers with rising monthly charges
+
+---
+
+## Power BI Dashboard
+A Power BI dashboard was created as the final storytelling layer to:
+- Track churn rate and customer segments
+- Visualize churn trends across contracts and tenure
+- Support stakeholder decision-making
 
 ---
 
 ## Tools & Technologies
-- **Python:** Pandas, NumPy, Matplotlib, Seaborn  
-- **Power BI:** DAX measures, KPI cards, interactive dashboards  
-- **Jupyter Notebook:** Data cleaning and exploratory data analysis  
-
----
-
-## Key Analysis & Insights
-- Customers with **shorter tenure** exhibit significantly higher churn rates  
-- **Month-to-month contracts** have the highest churn compared to long-term contracts  
-- Churn risk decreases as customer tenure increases, highlighting early lifecycle risk  
-
----
-
-## Dashboard Features
-- KPI cards for total customers and churn rate  
-- Churn analysis by tenure groups  
-- Contract-wise churn comparison  
-- Interactive slicers for contract type, payment method, and gender  
+- **Python**: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+- **Power BI**: Dashboarding and business storytelling
+- **Jupyter Notebook**
+- **GitHub**
 
 ---
 
 
 ---
 
-## How to Use
-1. Open the Jupyter notebook to review data cleaning and exploratory analysis  
-2. Open the Power BI `.pbix` file to explore the interactive dashboard  
-
----
-
-## Project Type
-Data Analytics | Business Intelligence | Customer Behavior Analysis
+## Key Takeaway
+This project demonstrates the ability to:
+- Analyze large datasets
+- Translate data into actionable business insights
+- Build and interpret predictive models
+- Communicate findings effectively to stakeholders
 
