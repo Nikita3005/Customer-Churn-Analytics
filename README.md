@@ -78,9 +78,6 @@ A Power BI dashboard was created as the final storytelling layer to:
 
 ---
 
-
----
-
 ## Key Takeaway
 This project demonstrates the ability to:
 - Analyze large datasets
